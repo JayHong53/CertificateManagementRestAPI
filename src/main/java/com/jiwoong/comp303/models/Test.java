@@ -55,6 +55,7 @@ public class Test {
 	@Column(name="result")
 	private String result;
 	
+	// Constructors 
 	public Test() {
 		super();
 	}
@@ -75,6 +76,7 @@ public class Test {
 		this.result = score >= certification.getPassingGrade() ? "Pass" : "Fail";
 	}
 
+	// Getters and Setters 
 	public String getTestId() {
 		return testId;
 	}
@@ -127,6 +129,7 @@ public class Test {
 		return result;
 	}
 	
+	// Auto update result when score or exam is changed 
 	@PrePersist
 	@PreUpdate
 	private void updateResult() {

@@ -10,5 +10,4 @@ public class JiwoongHongComp303Assignment3Application {
 		SpringApplication.run(JiwoongHongComp303Assignment3Application.class, args);
 		System.out.println("COMP303 Assignment 3 - Certificate Management System");
 	}
-
 }

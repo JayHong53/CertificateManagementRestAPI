@@ -49,5 +49,4 @@ public class TestCentreService {
 			throw new Exception("TestCentre with ID " + testCentreCode + " not found");
 		}
 	}
-
 }

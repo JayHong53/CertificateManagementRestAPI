@@ -20,6 +20,7 @@ public class CustomIdGenerator implements IdentifierGenerator {
 	@Override
 	public Object generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
 
+		// Setup prefix based on class
 		String prefix = "";
 		if (object instanceof Candidate) {
 			prefix = "CAND-";
@@ -50,7 +51,8 @@ public class CustomIdGenerator implements IdentifierGenerator {
 	            return prefix + String.format("%06d", num + 1);
 			}
 		}
-		// If no existing IDs were found, generate a new one starting from CAND-000001
+		
+		// If no existing IDs were found, generate a new one starting Prefix + 000001 
 	    return prefix + String.format("%06d", 1);
 	}
 }

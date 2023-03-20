@@ -40,7 +40,6 @@ public class CandidateController {
 	}
 	
 	// Update
-	// Create 
 	@PutMapping("/update")
 	public Candidate updateCandidate (@Validated @RequestBody Candidate candidate) throws Exception {
 		return candidateService.updateCandidate(candidate);	

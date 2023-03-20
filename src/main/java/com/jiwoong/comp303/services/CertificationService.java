@@ -47,6 +47,5 @@ public class CertificationService {
 		} else {
 			throw new Exception("Certification with Code " + certificationCode + " not found");
 		}
-	}
-
+	}	
 }

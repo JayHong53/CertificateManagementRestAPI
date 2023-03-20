@@ -52,6 +52,7 @@ public class Candidate {
 	@Email(message="Invalid Email format")
 	private String email;
 
+	// Constructors
 	public Candidate() {
 		super();
 	}
@@ -75,8 +76,7 @@ public class Candidate {
 		this.email = email;
 	}
 
-
-
+	// Getters and Setters
 	public String getCandidateId() {
 		return candidateId;
 	}

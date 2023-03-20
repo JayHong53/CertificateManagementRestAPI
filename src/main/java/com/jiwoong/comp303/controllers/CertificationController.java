@@ -29,8 +29,8 @@ public class CertificationController {
 	
 	// Get By Id
 	@GetMapping("/{examCode}")
-	public Certification getCertification(@PathVariable String examCode) throws Exception {
-		return certificationService.getCertificationByExamCode(examCode);
+	public Certification getCertification(@PathVariable String certificationCode) throws Exception {
+		return certificationService.getCertificationByExamCode(certificationCode);
 	}
 	
 	// Create 
@@ -40,16 +40,15 @@ public class CertificationController {
 	}
 	
 	// Update
-	// Create 
 	@PutMapping("/update")
 	public Certification updateCertification (@Validated @RequestBody Certification certification) throws Exception {
 		return certificationService.updateCertification(certification);		
 	}
 	
 	// Delete
-	@DeleteMapping("/{examCode}")
-	public String deleteCertification (@PathVariable String examCode) throws Exception {
-		certificationService.deleteCertification(examCode);
-	    return "Certification with exam code " + examCode + " has been deleted.";
+	@DeleteMapping("/{certificationCode}")
+	public String deleteCertification (@PathVariable String certificationCode) throws Exception {
+		certificationService.deleteCertification(certificationCode);
+	    return "Certification with exam code " + certificationCode + " has been deleted.";
 	}
 }

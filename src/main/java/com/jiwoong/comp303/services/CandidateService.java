@@ -12,7 +12,6 @@ public class CandidateService {
 	@Autowired
 	private CandidateRepository candidateRepo;
 	
-	
 	// Get All Candidates
 	public Iterable<Candidate> getAllCandidates() {
 		return candidateRepo.findAll();
@@ -50,5 +49,4 @@ public class CandidateService {
 			throw new Exception("Candidate data not found");
 		}
 	}
-
 }

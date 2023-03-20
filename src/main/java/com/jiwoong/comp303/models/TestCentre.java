@@ -45,6 +45,7 @@ public class TestCentre {
 	@Column(name="website")
 	private String website;
 	
+	// Constructors  
 	public TestCentre() {
 		super();
 	}
@@ -66,6 +67,7 @@ public class TestCentre {
 		this.website = website;
 	}
 
+	// Getters and Setters 
 	public String getTestCentreCode() {
 		return testCentreCode;
 	}

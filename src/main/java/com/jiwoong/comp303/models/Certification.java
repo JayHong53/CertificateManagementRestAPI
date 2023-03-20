@@ -54,6 +54,7 @@ public class Certification {
 	@DecimalMin(value="0", inclusive=true, message="Passing grade must be greater or equal to 0")
 	private double fee;
 	
+	// Constructors 
 	public Certification() {
 		super();
 	}
@@ -75,6 +76,7 @@ public class Certification {
 		this.fee = fee;
 	}
 
+	// Getters and Setters 
 	public String getCertificationCode() {
 		return certificationCode;
 	}

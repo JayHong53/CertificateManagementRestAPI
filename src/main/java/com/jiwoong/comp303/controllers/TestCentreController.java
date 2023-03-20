@@ -51,5 +51,4 @@ public class TestCentreController {
 		centreService.deleteTestCentre(testCentreCode);
 		return "Test Centre with code " + testCentreCode + " has been deleted.";
 	}
-
 }
